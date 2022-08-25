@@ -1,0 +1,147 @@
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+.max-width{
+	max-width: 1300px;
+	padding: 0 80px;
+	margin: auto;
+}
+/* navbar styling */
+
+.navbar{
+	position: fixed;
+	width: 100%;
+	padding: 35px 0;
+	font-family:'Ubuntu', sans-serif;
+	transition: all 0.3s ease;
+}
+.navbar.sticky{
+	padding:15px 0;
+	background:red;
+}
+.navbar .max-width{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.navbar.logo a{
+	font-size: 30px;
+	font-weight: 600;
+}
+.navbar .logo a span{
+	color: red;
+}
+.navbar.sticky .logo a span{
+	color:#fff;
+	transition: all 0.3s ease;
+
+}
+.navbar .menu li {
+	list-style: none;
+	display: inline-block;
+}
+.navbar .menu li a{
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	margin-left: 25px;
+	transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+	color: red;
+}
+#navbar a.active{
+	color:green;
+	font-weight: bold;
+}
+
+/* home section styling */
+
+.contact{
+	display: flex;
+	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("img/banner.jpg") no-repeat center;
+	height: 100vh;
+	color: #fff;
+	min-height: 500px;
+	font-family: 'Ubuntu', sans-serif;
+}
+.contact h1{
+	color:#F88843;
+	text-align: center;
+	margin-top:20px;
+}
+.contact p{
+	color: #F6EFBA;
+	text-align: center;
+	margin-bottom: 85%;
+}
+
+.contact-box{
+	border-radius:15px;
+	width:425px;
+	box-shadow:0 0 20px 0 #999;
+	top:60%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	position:absolute; 
+}
+.contact-box form{
+	margin:35px;
+	border-radius: 2px;
+}
+.input-field{
+	width: 350px;
+	height: 40px;
+	margin-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border:2px solid #777;
+	border-radius: 10px;
+	outline: none;
+}
+.textarea-field{
+	height:150px;
+	padding-top: 10px;
+}
+.btn{
+	border-radius: 20px;
+	color:#fff;
+	margin-top: 18px;
+	padding: 10px;
+	background-color:#47c35a;
+	font-size: 12px;
+	border:none;
+	cursor:pointer;
+}
+
+/*footer part */
+
+#footer{
+	height: 60px;
+}
+.footer-elements{
+	position: relative;
+}
+.footer-elements p{
+width:216px;
+margin:auto;
+margin-top: 60px;
+
+}
+.footer-elements ul{
+	position: absolute;
+	list-style-type: none;
+	right:0px;
+	top:3px;
+}
+.footer-elements li{
+	display:inline;
+}
+.footer-elements{
+	color: black;
+	padding-right:5px;
+}
